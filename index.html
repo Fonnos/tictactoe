@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+  </head>
+
+  <body>
+      <img id="game_over" class="d-none game-over" src="img/game-over.png">
+      <button onclick="restart()" id="restart_button" class="d-none restart-button">Restart</button>
+    <div class="player-panel">
+      <div id="player_1">
+        <img class="" src="img/circle.png" /> <span>Player 1</span>
+      </div>
+      <div class="player-inactive" id="player_2">
+        <img class="" src="img/cross.png" /> <span>Player 2</span>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td onclick="fillShape(0)">
+          <div class="middle">
+            <img id="cross_0" class="d-none cc" src="img/cross.png" />
+            <img id="circle_0" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+        <td onclick="fillShape(1)">
+          <div class="middle">
+            <div id="line_1" class="line"></div>
+            <img id="cross_1" class="d-none cc" src="img/cross.png" />
+            <img id="circle_1" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+        <td onclick="fillShape(2)">
+          <div class="middle">
+            <img id="cross_2" class="d-none cc" src="img/cross.png" />
+            <img id="circle_2" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td onclick="fillShape(3)">
+          <div class="middle">
+            <div id="line_4" class="line" style="transform: scaleX(0.0); rotate(90deg);"></div>
+            <img id="cross_3" class="d-none cc" src="img/cross.png" />
+            <img id="circle_3" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+        <td onclick="fillShape(4)">
+          <div class="middle">
+            <div id="line_7"
+              class="line"
+              style="width: 400px; transform: scaleX(0.0); rotate(45deg);"
+            ></div>
+            <div id="line_8"
+              class="line"
+              style="width: 400px; transform: scaleX(0.0); rotate(-45deg);"
+            ></div>
+            <div id="line_5" class="line" style="transform: scaleX(0.0); rotate(90deg);"></div>
+            <div id="line_2" class="line"></div>
+            <img id="cross_4" class="d-none cc" src="img/cross.png" />
+            <img id="circle_4" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+        <td onclick="fillShape(5)">
+          <div class="middle">
+            <div id="line_6" class="line" style="transform: scaleX(0.0); rotate(90deg);"></div>
+            <img id="cross_5" class="d-none cc" src="img/cross.png" />
+            <img id="circle_5" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td onclick="fillShape(6)">
+          <div class="middle">
+            <img id="cross_6" class="d-none cc" src="img/cross.png" />
+            <img id="circle_6" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+        <td onclick="fillShape(7)">
+          <div class="middle">
+            <div id="line_3" class="line"></div>
+            <img id="cross_7" class="d-none cc" src="img/cross.png" />
+            <img id="circle_7" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+        <td onclick="fillShape(8)">
+          <div class="middle">
+            <img id="cross_8" class="d-none cc" src="img/cross.png" />
+            <img id="circle_8" class="d-none cc" src="img/circle.png" />
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
